@@ -63,14 +63,30 @@
 //     }
 // })
 
-const { appendFile } = require("fs");
-const newContent = "\n - This is some more new text";
+    //      // renaming files
+    // rename(originalFileName, newFileName)
 
-appendFile("test.txt", newContent, (err) => {
+// const { rename } = require("fs");
+
+// rename("test.txt", "test2.txt", (err) => {
+//     if (err) {
+//         console.error(err);
+//         return;
+//     } else {
+//         console.log("File renamed ");
+//     }
+// });
+
+    //      // deleting files
+    // unlink(originalFileName)
+
+const { unlink } = require("fs");
+
+unlink("test2.txt", (err) => {
     if (err) {
         console.error(err);
         return;
     } else {
-        console.log("content written ");
+        console.log("File deleted ");
     }
 });
