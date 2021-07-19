@@ -1,11 +1,10 @@
 {
   "name": "nodeJS-server-study",
   "version": "1.0.0",
-  "description": "",
-  "main": "addNums.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server4.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +17,6 @@
     "url": "https://github.com/elijahsamuels/nodeJS-server-study/issues"
   },
   "homepage": "https://github.com/elijahsamuels/nodeJS-server-study#readme",
-  "type": "module"
+  "type": "commonjs",
+  "description": ""
 }
