@@ -4,19 +4,21 @@ const HOSTNAME = process.env.HOSTNAME || "localhost";
 const PORT = process.env.PORT || 3000;
 
 const server = http.createServer((request, response) => {
-    response.statusCode = 200;
     response.setHeader("Content-Type", "text/html");
 
     let path = "./";
     switch (request.url) {
         case "/":
             path += "index.html";
+            response.statusCode = 200;
             break;
         case "/about":
             path += "about.html";
+            response.statusCode = 200;
             break;
         default:
-            path += "404.html";
+            response.setHeader("location", "/");
+            response.statusCode = 301;
             break;
     }
 

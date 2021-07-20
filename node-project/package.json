@@ -1,0 +1,14 @@
+{
+  "name": "node_project",
+  "version": "1.0.0",
+  "description": "project test",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elijah",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
